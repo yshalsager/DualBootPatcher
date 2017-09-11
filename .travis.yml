@@ -34,7 +34,7 @@ before_install:
   # Install cmake >3.6
   - wget -q https://cmake.org/files/v3.7/cmake-3.7.2.tar.gz && tar xzf cmake-3.7.2.tar.gz && mv cmake-3.7.2 cmake && cd cmake && sed -i 's|cmake_options="-DCMAKE_BOOTSTRAP=1"|cmake_options="-DCMAKE_BOOTSTRAP=1 -DCMAKE_USE_OPENSSL=ON"|' bootstrap && ./bootstrap && 2>/dev/null 1>&2 make && 2>/dev/null 1>&2 sudo make install && cd --
   # Get Android NDK R15
-  - wget -q https://dl.google.com/android/repository/android-ndk-r15c-linux-x86_64.zip && unzip -qq android-ndk-r15c-linux-x86_64.zip && mv android-ndk-r15 android-ndk
+  - wget -q https://dl.google.com/android/repository/android-ndk-r15c-linux-x86_64.zip && unzip -qq android-ndk-r15c-linux-x86_64.zip && mv android-ndk-r15c android-ndk
   - export ANDROID_NDK_HOME=~/android-ndk
   - export ANDROID_NDK=~/android-ndk
   - cd --
