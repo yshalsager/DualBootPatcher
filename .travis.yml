@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - git clone --recursive https://github.com/chenxiaolong/DualBootPatcher DualBootPatcher/
+script:
+  - travis_wait 30
+  - chmod 775 upload
+  - ./upload
