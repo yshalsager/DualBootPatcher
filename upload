@@ -2,11 +2,11 @@ cd DualBootPatcher/docker
 ./generate.sh
 ./build.sh
 docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-docker tag chenxiaolong/dualbootpatcher:9.2.0-3-android yshalsager/dualbootpatcher:9.2.0-3-android
-docker tag chenxiaolong/dualbootpatcher:9.2.0-3-base yshalsager/dualbootpatcher:9.2.0-3-base
-docker tag chenxiaolong/dualbootpatcher:9.2.0-3-linux yshalsager/dualbootpatcher:9.2.0-3-linux
-docker tag chenxiaolong/dualbootpatcher:9.2.0-3-mingw yshalsager/dualbootpatcher:9.2.0-3-mingw
+docker tag chenxiaolong/dualbootpatcher:9.3.0-2-android yshalsager/dualbootpatcher:9.3.0-2-android
+docker tag chenxiaolong/dualbootpatcher:9.3.0-2-base yshalsager/dualbootpatcher:9.3.0-2-base
+docker tag chenxiaolong/dualbootpatcher:9.3.0-2-linux yshalsager/dualbootpatcher:9.3.0-2-linux
+docker tag chenxiaolong/dualbootpatcher:9.3.0-2-mingw yshalsager/dualbootpatcher:9.3.0-2-mingw
 docker push yshalsager/dualbootpatcher:9.2.0-3-android
-docker push yshalsager/dualbootpatcher:9.2.0-3-base
-docker push yshalsager/dualbootpatcher:9.2.0-3-linux
-docker push yshalsager/dualbootpatcher:9.2.0-3-mingw
+docker push yshalsager/dualbootpatcher:9.3.0-2-base
+docker push yshalsager/dualbootpatcher:9.3.0-2-linux
+docker push yshalsager/dualbootpatcher:9.3.0-2-mingw
