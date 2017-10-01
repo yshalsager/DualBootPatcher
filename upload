@@ -6,7 +6,7 @@ docker tag chenxiaolong/dualbootpatcher:9.3.0-2-android yshalsager/dualbootpatch
 docker tag chenxiaolong/dualbootpatcher:9.3.0-2-base yshalsager/dualbootpatcher:9.3.0-2-base
 docker tag chenxiaolong/dualbootpatcher:9.3.0-2-linux yshalsager/dualbootpatcher:9.3.0-2-linux
 docker tag chenxiaolong/dualbootpatcher:9.3.0-2-mingw yshalsager/dualbootpatcher:9.3.0-2-mingw
-docker push yshalsager/dualbootpatcher:9.2.0-3-android
+docker push yshalsager/dualbootpatcher:9.3.0-2-android
 docker push yshalsager/dualbootpatcher:9.3.0-2-base
 docker push yshalsager/dualbootpatcher:9.3.0-2-linux
 docker push yshalsager/dualbootpatcher:9.3.0-2-mingw
