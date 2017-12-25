@@ -1,7 +1,7 @@
 cd DualBootPatcher/docker
 ./generate.sh
 ./build.sh
-docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+docker login -u $DOCKER_USER -p $DOCKER_PASS
 docker tag chenxiaolong/dualbootpatcher:9.3.0-4-android yshalsager/dualbootpatcher:9.3.0-4-android
 docker tag chenxiaolong/dualbootpatcher:9.3.0-4-base yshalsager/dualbootpatcher:9.3.0-4-base
 docker tag chenxiaolong/dualbootpatcher:9.3.0-4-linux yshalsager/dualbootpatcher:9.3.0-4-linux
