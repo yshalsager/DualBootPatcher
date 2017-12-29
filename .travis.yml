@@ -30,7 +30,7 @@ before_install:
   # Install openssl
   - wget -q https://www.openssl.org/source/openssl-1.1.0g.tar.gz && tar xzf openssl-1.1.0g.tar.gz && cd openssl-1.1.0g && ./config shared --prefix=/usr/local/ssl --openssldir=/usr/local/ssl && 2>/dev/null 1>&2 make && 2>/dev/null 1>&2 sudo make install && export PATH=${PATH}:/usr/local/ssl && cd --
   # Install cmake >3.7
-  - wget -q https://cmake.org/files/v3.10/cmake-3.10.1.tar.gz && tar xzf cmake-3.10.1.tar.gz && mv cmake-3.10.1 cmake && cd cmake && sed -i 's|cmake_options="-DCMAKE_BOOTSTRAP=1"|cmake_options="-DCMAKE_BOOTSTRAP=1 -DCMAKE_USE_OPENSSL=ON"|' bootstrap && ./bootstrap && sudo make && sudo make install && cd --
+  - wget -q https://cmake.org/files/v3.10/cmake-3.10.1.tar.gz && tar xzf cmake-3.10.1.tar.gz && mv cmake-3.10.1 cmake && cd cmake && ./bootstrap && sudo make && sudo make install && cd --
   # Get Android NDK R16
   - wget -q https://dl.google.com/android/repository/android-ndk-r16b-linux-x86_64.zip && unzip -qq android-ndk-r16b-linux-x86_64.zip && mv android-ndk-r16b android-ndk
   - export ANDROID_NDK_HOME=~/android-ndk
